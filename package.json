@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@okta/okta-auth-js": "^7.5.0",
+    "@okta/okta-vue": "^5.7.0",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
   },
