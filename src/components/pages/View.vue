@@ -1,7 +1,15 @@
-import { RouterView } from 'vue-router';
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+import Tabs from "../Tabs.vue";
+</script>
 
 <template>
-    <div class="border">
-        <router-view></router-view>
+     <div>
+        <h3>This is from ViewComponent</h3>
     </div>
+    <Tabs>
+        <div>
+            <router-view></router-view>
+        </div>
+    </Tabs>
 </template>

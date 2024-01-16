@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -7,7 +8,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -18,8 +19,34 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "components/*": [
+        "src/components/*"
+      ],
+      "pages/*": [
+        "src/pages/*"
+      ],
+      "content/*": [
+        "src/components/content/*"
+      ],
+      "router/*": [
+        "src/router/*"
+      ],
+      "types/*": [
+        "src/types/*"
+      ],
+      "helpers/*": [
+        "src/helpers/*"
+      ],
+      "config/*": [
+        "src/config/*"
+      ],
+      "style/*": [
+        "src/style/*"
+      ]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "components.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
