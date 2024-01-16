@@ -7,6 +7,6 @@ import { RouterView } from "vue-router";
         <h3>This is from ViewComponent</h3>
     </div>
     <div>
-            <router-view></router-view>
+        <router-view></router-view>
     </div>
 </template>

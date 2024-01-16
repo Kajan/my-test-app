@@ -15,13 +15,17 @@ import { ShallowRef, inject, ref,  } from "vue";
 
 <template>
   <div class="card">
+    <p>
+      This is from the FirstPage. 
+    </p>
+    Welcome back <h5> {{ authState?.idToken?.claims.name }} </h5>
     <button type="button" @click="count++">count is {{ count }}</button>
-    <h5>
-      This is from first page. 
-      User Name is {{ authState?.idToken?.claims.name }}
-    </h5>
     <Button @click="logout()" type="text">Logout</Button>
   </div>
-
-  
 </template>
+<style>
+  button{
+    margin: 0 0.5rem;
+    background-color: lightgrey;
+  }
+</style>
