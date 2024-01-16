@@ -1,1 +1,0 @@
-import{d as o,r as n,c as a,a as s,t as r,o as c}from"./index-Z_AH0y7u.js";const i={class:"card"},l=s("p",null," This is from the FirstPage. ",-1),m=o({__name:"FirstPage",setup(u){const t=n(0);return(p,e)=>(c(),a("div",i,[l,s("button",{type:"button",onClick:e[0]||(e[0]=_=>t.value++)},"count is "+r(t.value),1)]))}});export{m as default};
