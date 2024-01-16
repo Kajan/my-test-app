@@ -6,8 +6,8 @@ import { ref } from "vue";
 <template>
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
+    <h5>
       This is from first page. 
-    </p>
+    </h5>
   </div>
 </template>
