@@ -15,5 +15,5 @@
     "routes": {
       "/**": "index.html"
     }
-  }
+}
   
