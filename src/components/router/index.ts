@@ -9,11 +9,12 @@ const routes = [
         meta: {
             requiresAuth: true
         }
+        
     },
     {
         path: '/my-test-app/login/callback',
         component: LoginCallback,
-        redirectUri: './index.html'
+        redirectUri: '/index.html',
     }
 ]
 
