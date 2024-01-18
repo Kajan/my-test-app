@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist"
+    "deploy": "cd dist && copy index.html 404.html"
   },
   "dependencies": {
     "@okta/okta-auth-js": "^7.5.0",
