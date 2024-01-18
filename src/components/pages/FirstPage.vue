@@ -6,7 +6,7 @@ import {   ShallowRef, inject, ref } from "vue";
     const count = ref(0)
     const authState = inject<ShallowRef<AuthState>>('okta.authState');
     
-    console.log('Reached the First page');
+    console.log('Reached the First page.');
     console.log('authState', authState?.value);
 
     const $auth = useAuth();
