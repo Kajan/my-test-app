@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
+
+console.log('Reached the vue component');
+
 </script>
 
 <template>

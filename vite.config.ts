@@ -5,4 +5,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   base: '/my-test-app/',
+  // base: process.env.NODE_ENV === 'production' 
+  //   ? 'https://kajan.github.io/'
+  //   : '/',
 })
