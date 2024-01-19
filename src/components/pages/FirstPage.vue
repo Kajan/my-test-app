@@ -13,6 +13,10 @@ import {   ShallowRef, inject, ref } from "vue";
 
     const logout = async () => {
       await $auth.signOut();
+      console.log('after signout auth state', authState?.value);  
+      await $auth.closeSession();
+      console.log('after closing session auth state', authState?.value);  
+      window.location.origin;
     } 
 </script>
 

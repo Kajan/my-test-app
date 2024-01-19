@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "cd dist && copy index.html 404.html"
+    "build": "vue-tsc && vite build && cd dist && copy index.html 404.html",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@okta/okta-auth-js": "^7.5.0",
